@@ -1,0 +1,29 @@
+name:                foo
+version:             0.1
+synopsis:            <Project description>
+description:         <Project description>
+category:            Tests
+license:             OtherLicense
+author:              Rogan Creswick
+maintainer:          creswick@gmail.com
+Cabal-Version:       >=1.2
+build-type:          Simple
+
+
+Library
+   hs-source-dirs:   src
+   Build-depends:    HaVSA      >= 0.1.0.2 && < 0.1.1
+
+   Exposed-modules:  Foo.Foo
+   ghc-options:      -Wall
+
+
+Executable tests
+   Main-Is:           Main.hs
+   hs-source-dirs:    src
+
+   Build-Depends:     foo,
+                      HaVSA      >= 0.1.0.2 && < 0.1.1
+
+   ghc-options:       -Wall
+   hs-source-dirs:    src
