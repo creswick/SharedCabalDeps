@@ -17,6 +17,15 @@ Library
    Exposed-modules:  Foo.Foo
    ghc-options:      -Wall
 
+Executable helperApp2
+   Main-Is:           Main.hs
+   hs-source-dirs:    src2
+
+   Build-Depends:     foo, base
+--                      , zenc
+
+   ghc-options:       -Wall
+
 
 Executable helperApp
    Main-Is:           Main.hs
@@ -27,11 +36,3 @@ Executable helperApp
 
    ghc-options:       -Wall
 
-Executable helperApp2
-   Main-Is:           Main.hs
-   hs-source-dirs:    src2
-
-   Build-Depends:     foo, base
---                      , zenc
-
-   ghc-options:       -Wall
