@@ -3,11 +3,11 @@ module Foo.Foo
     )
 where
 
-import AI.VersionSpaces
+import Text.Encoding.Z
 
 fooVersion :: String
 fooVersion = "Foo v1"
 
-fooBSR :: BSR Set Int Int
-fooBSR = undefined -- this dosen't matter.
+fooBSR :: EncodedString
+fooBSR = "" -- this doesn't matter.
 
