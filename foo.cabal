@@ -18,7 +18,7 @@ Library
    ghc-options:      -Wall
 
 
-Executable tests
+Executable helperApp
    Main-Is:           Main.hs
    hs-source-dirs:    src
 
@@ -26,4 +26,3 @@ Executable tests
 --                      , zenc
 
    ghc-options:       -Wall
-   hs-source-dirs:    src
