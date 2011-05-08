@@ -6,7 +6,7 @@ category:            Tests
 license:             OtherLicense
 author:              Rogan Creswick
 maintainer:          creswick@gmail.com
-Cabal-Version:       >=1.8
+Cabal-Version:       >=1.10
 build-type:          Simple
 
 
@@ -21,6 +21,15 @@ Library
 Executable helperApp
    Main-Is:           Main.hs
    hs-source-dirs:    src
+
+   Build-Depends:     foo, base
+--                      , zenc
+
+   ghc-options:       -Wall
+
+Executable helperApp2
+   Main-Is:           Main.hs
+   hs-source-dirs:    src2
 
    Build-Depends:     foo, base
 --                      , zenc
